@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+   $(function(){
+    // ここに処理を記述
+      $('#button').on('click',function() {
+        let number = document.getElementById('value').value;
+      if(number == "1" ){
+      $('#box').removeClass();
+      $('#box').addClass('active1');
+      }
+      else if(number == '2'){
+        $('#box').removeClass();
+        $('#box').addClass('active2');
+      }
+      else{
+        $('#box').removeClass();
+        $('#box').addClass('active3');
+      }
+});
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
